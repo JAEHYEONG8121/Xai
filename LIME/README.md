@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ```
 
 ## 3. Project Directory Path
-
+```bash
 LIME-PyTorch/
 │── README.md                 
 │── requirements.txt
@@ -39,3 +39,5 @@ LIME-PyTorch/
 │   │── utils.py              
 │── results/                  
 │   └── feature_importance.png
+```
+
