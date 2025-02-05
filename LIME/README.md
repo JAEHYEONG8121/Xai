@@ -24,3 +24,18 @@ conda activate lime_env
 
 # Install required packages
 pip install -r requirements.txt
+
+
+## 3. Project Directory Path
+
+LIME-PyTorch/
+│── README.md                 
+│── requirements.txt
+│── main.py
+│── lime_experiment.ipynb     
+│── src/                      
+│   │── model.py              
+│   │── lime.py               
+│   │── utils.py              
+│── results/                  
+│   └── feature_importance.png
