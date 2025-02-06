@@ -47,7 +47,7 @@ The LIME paper aims to approximate a complex model $f(x)$ with a simple, interpr
 The optimization objective for LIME is defined as:
 
 $$
-$ argmin_{g \in G}   L(f, g, \pi_x) + \Omega(g)$ 
+ argmin_{g \in G}   L(f, g, \pi_x) + \Omega(g)
 $$
 
 
