@@ -87,7 +87,7 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 | $Importance = \|wᵢ\|$| Extracted from `local_model.linear.weight`<br> (_src/lime.py_) | Computes feature importance based on absolute weight values |
 
 ## 5. Results & Analysis
-### Experiment Results
+### 🔹 Experiment Results
 - The **feature importance** calculated by LIME for a given input dataset is visualized as a graph.
 - The analysis helps to determine **which features have the most significant impact on predictions**.
 
@@ -95,11 +95,17 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 
 ![image](https://github.com/user-attachments/assets/65ebcc52-48f5-4c22-aa93-167c34a8c08e)
 
+## 6. Next Steps
 
+✅ **Compare LIME with SHAP** to analyze performance differences.
+✅ **Apply LIME to image/text data** and evaluate its effectiveness.
 
+## 7. References $ Papers
 
+📄 **Paper**: "Why Should I Trust You?" Explaining the Predictions of Any Classifier
+🔗 **Official LIME Library**: marcotcr/lime
 
-
+💡 **Feedback on this project is always welcome!** 🚀
 
 
 
