@@ -58,6 +58,7 @@ $$
 - $\Omega(g)$ : Regularization term, ensuring that $g(x)$ remains simple and interpretable
 
 LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regression model** to explain the prediction.
+
 <br/>
 <br/>
 ✅ **(1) Data Preparation & Model Traning**
