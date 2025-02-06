@@ -97,12 +97,12 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 
 ## 6. Next Steps
 
-✅ **Compare LIME with SHAP** to analyze performance differences.
+✅ **Compare LIME with SHAP** to analyze performance differences.<br/>
 ✅ **Apply LIME to image/text data** and evaluate its effectiveness.
 
 ## 7. References $ Papers
 
-📄 **Paper**: "Why Should I Trust You?" Explaining the Predictions of Any Classifier
+📄 **Paper**: "Why Should I Trust You?" Explaining the Predictions of Any Classifier<br/>
 🔗 **Official LIME Library**: marcotcr/lime
 
 💡 **Feedback on this project is always welcome!** 🚀
