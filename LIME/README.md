@@ -41,7 +41,7 @@ LIME-PyTorch/
 │   └── feature_importance.png
 ```
 
-## 4. implementation
+## 4. Key Implementation Steps
 
 The LIME paper aims to approximate a complex model $f(x)$ with a simple, interpretable local model $g(x)$.
 The optimization objective for LIME is defined as:
@@ -58,6 +58,19 @@ $$
 - $\Omega(g)$ : Regularization term, ensuring that $g(x)$ remains simple and interpretable
 
 LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regression model** to explain the prediction.
+
+✅ **(1) Data Preparation & Model Traning**
+- Implement the `SimpleMLP` model using PyTorch to solve a classification task.
+- Generate synthetic data using `make_classification()`.
+
+✅ **(2) Perturbation Sampling**
+- Create new perturbed data samples by adding Gaussian noise to the original sample.
+
+✅ **(3) Weighting (Applying Weights to Samples)**
+- Compute distance-based weights between the original sample and perturbed samples using the RBF kernel.
+
+✅ **(4) Training the Local Linear Model**
+- Train a weighted linear regression model using the perturbed samples and weights.
 
 ### 🌟 Mapping Equations to code
 
