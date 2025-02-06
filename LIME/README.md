@@ -63,7 +63,7 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 
 | **Paper Equation** | **Implemented in Code (File)** | **Description** |
 |-------------------|--------------------------------|------------------------------------|
-| $ Z = \{z_1, z_2, ..., z_n\}, z_i \sim \mathcal{N}(x, \sigma^2) $ | `generate_perturbations()`<br> (_src/utils.py_) | Generates perturbed samples using Gaussian noise |
+| $ \Z = \{z_1, z_2, ..., z_n\}, z_i \sim \mathcal{N}(x, \sigma^2)\ $ | `generate_perturbations()`<br> (_src/utils.py_) | Generates perturbed samples using Gaussian noise |
 | \( \pi_x(z) = \exp\left(- \frac{d(x, z)^2}{2\sigma^2} \right) \) | `compute_weights()`<br> (_src/utils.py_) | Assigns importance weights to perturbed samples |
 | \( \underset{g \in G}{\operatorname{argmin}} \sum_{i} \pi_x(z_i) (f(z_i) - g(z_i))^2 + \Omega(g) \) | `train_local_model()`<br> (_src/lime.py_) | Trains the local linear model using weighted MSE loss |
 | \( \text{Importance} = |w_i| \) | Extracted from `local_model.linear.weight`<br> (_src/lime.py_) | Computes feature importance based on absolute weight values |
