@@ -59,6 +59,8 @@ $$
 
 LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regression model** to explain the prediction.
 
+
+
 ✅ **(1) Data Preparation & Model Traning**
 - Implement the `SimpleMLP` model using PyTorch to solve a classification task.
 - Generate synthetic data using `make_classification()`.
@@ -71,6 +73,8 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 
 ✅ **(4) Training the Local Linear Model**
 - Train a weighted linear regression model using the perturbed samples and weights.
+
+
 
 ### 🌟 Mapping Equations to code
 
