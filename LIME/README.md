@@ -41,3 +41,35 @@ LIME-PyTorch/
 │   └── feature_importance.png
 ```
 
+## 4. implementation
+
+The LIME paper aims to approximate a complex model $f(x)$ with a simple, interpretable local model $g(x)$.
+The optimization objective for LIME is defined as:
+
+$$
+$ argmin_{g \in G}   L(f, g, \pi_x) + \Omega(g)$ 
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
