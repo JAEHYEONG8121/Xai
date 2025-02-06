@@ -14,7 +14,7 @@ It can be applied to any model and helps interpret its predictions.
 3️⃣ **Local Model Training** → Train a linear regression model to improve interpretability.  
 
 ## 2. Quick Start
-### 1️⃣ **Set Up Virtual Environment & Install Dependencies (Anaconda)**
+### **Set Up Virtual Environment & Install Dependencies (Anaconda)**
 ```bash
 # Create a new virtual environment
 conda create --name lime_env python=3.8
@@ -86,7 +86,14 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 | $\underset{g \in G}{\arg\min} Σᵢ πₓ(zᵢ) (f(zᵢ) - g(zᵢ))² + Ω(g)$ | `train_local_model()`<br> (_src/lime.py_) | Trains the local linear model using weighted MSE loss |
 | $Importance = \|wᵢ\|$| Extracted from `local_model.linear.weight`<br> (_src/lime.py_) | Computes feature importance based on absolute weight values |
 
+## 5. Results & Analysis
+### Experiment Results
+- The **feature importance** calculated by LIME for a given input dataset is visualized as a graph.
+- The analysis helps to determine **which features have the most significant impact on predictions**.
 
+### 🔹 Feature Importance Graph Example
+
+![image](https://github.com/user-attachments/assets/65ebcc52-48f5-4c22-aa93-167c34a8c08e)
 
 
 
