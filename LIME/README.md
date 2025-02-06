@@ -61,6 +61,7 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 
 <br/>
 <br/>
+
 ✅ **(1) Data Preparation & Model Traning**
 - Implement the `SimpleMLP` model using PyTorch to solve a classification task.
 - Generate synthetic data using `make_classification()`.
