@@ -50,15 +50,23 @@ $$
  argmin_{g \in G}   L(f, g, \pi_x) + \Omega(g)
 $$
 
-**🌟Explanation:**
+### 🌟 Explanation:
 - $f(x)$ : The original ML model
 - $g(x)$ : A local surrogate model (a simple linear model in LIME)
 - $\pi_x$ : Weight function that gives higer importance to samples close to $x$
 - $L(f, g, \pi_x)$ : Loss function, ensuring that $g(x)$ approximates $f(x)$ locally
 - $\Omega(g)$ : Regularization term, ensuring that $g(x)$ remains simple and interpretable
 
-LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regressiono model** to explain the prediction.
+LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regression model** to explain the prediction.
 
+### 🌟 Mapping Equations to code
+
+| **Paper Equation** | **Implemented in Code (File)** | **Description** |
+|-------------------|--------------------------------|------------------------------------|
+| \( Z = \{z_1, z_2, ..., z_n\}, z_i \sim \mathcal{N}(x, \sigma^2) \) | `generate_perturbations()`<br> (_src/utils.py_) | Generates perturbed samples using Gaussian noise |
+| \( \pi_x(z) = \exp\left(- \frac{d(x, z)^2}{2\sigma^2} \right) \) | `compute_weights()`<br> (_src/utils.py_) | Assigns importance weights to perturbed samples |
+| \( \underset{g \in G}{\operatorname{argmin}} \sum_{i} \pi_x(z_i) (f(z_i) - g(z_i))^2 + \Omega(g) \) | `train_local_model()`<br> (_src/lime.py_) | Trains the local linear model using weighted MSE loss |
+| \( \text{Importance} = |w_i| \) | Extracted from `local_model.linear.weight`<br> (_src/lime.py_) | Computes feature importance based on absolute weight values |
 
 
 
