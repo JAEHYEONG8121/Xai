@@ -75,6 +75,7 @@ LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights
 - Train a weighted linear regression model using the perturbed samples and weights.
 <br/>
 <br/>
+
 ### 🌟 Mapping Equations to code
 
 | **Paper Equation** | **Implemented in Code (File)** | **Description** |
