@@ -50,7 +50,14 @@ $$
  argmin_{g \in G}   L(f, g, \pi_x) + \Omega(g)
 $$
 
+**🌟Explanation:**
+- $f(x)$ : The original ML model
+- $g(x)$ : A local surrogate model (a simple linear model in LIME)
+- $\pi_x$ : Weight function that gives higer importance to samples close to $x$
+- $L(f, g, \pi_x)$ : Loss function, ensuring that $g(x)$ approximates $f(x)$ locally
+- $\Omega(g)$ : Regularization term, ensuring that $g(x)$ remains simple and interpretable
 
+LIME approximates $f(x)$ by generating **pertubed samples**, assigning **weights**, and training a **weighted linear regressiono model** to explain the prediction.
 
 
 
