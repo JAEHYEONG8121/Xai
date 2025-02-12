@@ -76,6 +76,7 @@ $\[
 The SHAP value measures the contribution of feature **$i$** by evaluating the difference in model predictions when **$i$** is present vs. absent.  
 It averages this difference over all possible feature subsets **$S$**, weighted according to the number of features.
 
+
 ✅ **(1) Define the Model**
   - Create a `simple MLP` model to generate predictions.
   - The model should be compatible with SHAP explanations.
