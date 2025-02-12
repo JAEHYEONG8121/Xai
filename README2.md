@@ -12,12 +12,12 @@ It quantifies the contribution of each input feature to the final prediction.
   - Fairly distributes the model's prediction among individual feature contributions.
   - Considers all possible feature combinations to compare the average contribution of each feature.
 
-**💡 Why SHAP?**
+**💡 Why SHAP?** <bn>
 Provides consistent and fair feature attribution based on Shapley values.
 Works for both classification and regression models.
 Offers global (entire dataset) and local (single prediction) explanations.
 
-**🌟 Key Principles**
+**🌟 Key Principles**<bn>
 1️⃣ Perturbation → Generate variations of the original input by removing/altering features.
 2️⃣ Shapley Value Calculation → Compute the marginal contribution of each feature using coalitional game theory.
 3️⃣ Local Explanations → Aggregate contributions to explain a model’s decision for a specific instance.
