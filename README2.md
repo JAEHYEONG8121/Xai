@@ -7,6 +7,11 @@ and implements SHAP using PyTorch from scratch.
 SHAP (Shapley Additive Explanations) is a game-theoretic approach to explain the output of any machine learning model.
 It quantifies the contribution of each input feature to the final prediction.
 
+**✅ Key Concepts of SHAP**
+  - Evaluates the model's output changes by adding or removing features.
+  - Fairly distributes the model's prediction among individual feature contributions.
+  - Considers all possible feature combinations to compare the average contribution of each feature.
+
 **💡 Why SHAP?**
 Provides consistent and fair feature attribution based on Shapley values.
 Works for both classification and regression models.
