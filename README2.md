@@ -19,3 +19,26 @@ It quantifies the contribution of each input feature to the final prediction.
 1️⃣ Perturbation → Generate variations of the original input by removing/altering features.<br/>
 2️⃣ Shapley Value Calculation → Compute the marginal contribution of each feature using coalitional game theory.<br/>
 3️⃣ Local Explanations → Aggregate contributions to explain a model’s decision for a specific instance.
+
+### 2. SHAP Equation
+
+The SHAP values, as proposed in the original paper, are defined using the **Shapley Value** equation:
+
+\[
+\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(|F| - |S| - 1)!}{|F|!} \left( f(S \cup \{i\}) - f(S) \right)
+\]
+
+**📌 Explanation of the Equation**
+
+- **\(\phi_i\)** : The SHAP value for a specific feature **\(i\)**
+- **\(F\)** : The set of all features
+- **\(S\)** : A subset of features excluding **\(i\)**
+- **\(f(S)\)** : The model prediction when only features in **\(S\)** are present
+- **\(f(S \cup \{i\})\)** : The model prediction when feature **\(i\)** is added to **\(S\)**
+
+**🔍 Key Concept**
+
+The SHAP value measures the contribution of feature **\(i\)** by evaluating the difference in model predictions when **\(i\)** is present vs. absent.  
+It averages this difference over all possible feature subsets **\(S\)**, weighted according to the number of features.
+
+
