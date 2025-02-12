@@ -64,11 +64,11 @@ $\[
 
 ### 📌 Explanation of the Equation
 
-- $**\\phi_i\**$ : The SHAP value for a specific feature **\(i\)**
-- $**\F\**$ : The set of all features
-- $**\S\**$ : A subset of features excluding **\(i\)**
-- $**\f(S)\**$ : The model prediction when only features in **\(S\)** are present
-- $**\f(S \cup \{i\})\**$ : The model prediction when feature **\(i\)** is added to **\(S\)**
+- $**\phi_i**$ : The SHAP value for a specific feature **\(i\)**
+- $**F**$ : The set of all features
+- $**S**$ : A subset of features excluding **\(i\)**
+- $**f(S)**$ : The model prediction when only features in **\(S\)** are present
+- $**f(S \cup \{i\})**$ : The model prediction when feature **\(i\)** is added to **\(S\)**
 
 ### 🔍 Key Concept
 
