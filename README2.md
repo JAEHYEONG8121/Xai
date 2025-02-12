@@ -35,7 +35,6 @@ conda activate lime_env
 pip install -r requirements.txt
 ```
 <br/>
-
 ## 3. Project Directory Path
 
 ```bash
