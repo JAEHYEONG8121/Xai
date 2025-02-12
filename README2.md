@@ -54,7 +54,7 @@ SHAP-pytorch/
 ```
 <br/>
 
-## 4. SHAP Equation
+## 4. Key Implementation Steps
 
 The SHAP values, as proposed in the original paper, are defined using the **Shapley Value** equation:
 
@@ -76,4 +76,20 @@ $\[
 The SHAP value measures the contribution of feature **$i$** by evaluating the difference in model predictions when **$i$** is present vs. absent.  
 It averages this difference over all possible feature subsets **$S$**, weighted according to the number of features.
 
+✅ **(1) Define the Model**
+  - Create a `simple MLP` model to generate predictions.
+  - The model should be compatible with SHAP explanations.
+    
+✅ **(2) Generate Perturbations**
+  - Randomly modify the input feature values `(perturbation)` to estimate their impact.
+  - This is a practical approach instead of computing all feature subsests explicitly.
 
+✅ **(3) Compute Weights for Perturbations**
+  - Assign `higher weights` to perturbed samples that are `closer to the original instance` using `RBF kernel`.
+  - This follows the SHAP principle of weighting subsets based on their probability of occurrernce.
+    
+✅ **(4) Compute SHAP Values**
+  - Compute the baseline prediction (when all features are removed).
+  - Compute the perturbed predictions.
+  - Calculate the difference between the perturbed and baseline predictions.
+  - Weight these differences to obtain SHAP values.
