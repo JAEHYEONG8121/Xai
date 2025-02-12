@@ -73,7 +73,7 @@ $\[
 
 ### 🔍 Key Concept
 
-The SHAP value measures the contribution of feature **\(i\)** by evaluating the difference in model predictions when **\(i\)** is present vs. absent.  
-It averages this difference over all possible feature subsets **\(S\)**, weighted according to the number of features.
+The SHAP value measures the contribution of feature **$i$** by evaluating the difference in model predictions when **$i$** is present vs. absent.  
+It averages this difference over all possible feature subsets **$S$**, weighted according to the number of features.
 
 
