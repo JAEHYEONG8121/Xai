@@ -22,6 +22,36 @@ It quantifies the contribution of each input feature to the final prediction.
 3️⃣ Local Explanations → Aggregate contributions to explain a model’s decision for a specific instance.
 <br/>
 <br/>
+## 2. Quick Start
+### **Set Up Virtual Environment & Install Dependencies (Anaconda)**
+```bash
+# Create a new virtual environment
+conda create --name lime_env python=3.8
+
+# Activate the environment
+conda activate lime_env
+
+# Install required packages
+pip install -r requirements.txt
+```
+<br?>
+<br/>
+## 3. Project Directory Path
+```bash
+LIME-PyTorch/
+│── README.md                 
+│── requirements.txt
+│── main.py
+│── lime_experiment.ipynb     
+│── src/                      
+│   │── model.py              
+│   │── lime.py               
+│   │── utils.py              
+│── results/                  
+│   └── feature_importance.png
+```
+
+
 ## 2. SHAP Equation
 
 The SHAP values, as proposed in the original paper, are defined using the **Shapley Value** equation:
