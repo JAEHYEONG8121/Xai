@@ -34,25 +34,26 @@ conda activate lime_env
 # Install required packages
 pip install -r requirements.txt
 ```
-<br?>
+<br/>
 <br/>
 ## 3. Project Directory Path
 ```bash
-LIME-PyTorch/
+SHAP-pytorch/
 │── README.md                 
 │── requirements.txt
 │── main.py
-│── lime_experiment.ipynb     
+│── notebooks/     
 │── src/                      
-│   │── model.py              
-│   │── lime.py               
+│   │── explain.py
+│   │── model.py          
+│   │── shap.py
+│   │── train.py                
 │   │── utils.py              
-│── results/                  
-│   └── feature_importance.png
+│── results/
 ```
 
 
-## 2. SHAP Equation
+## 4. SHAP Equation
 
 The SHAP values, as proposed in the original paper, are defined using the **Shapley Value** equation:
 
