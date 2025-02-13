@@ -137,6 +137,7 @@ If SHAP values are highly asymmetrical, the model may be overly dependent on a f
 
 ### 🔹 Feature Importance Graph Example
 
+![image](https://github.com/user-attachments/assets/d5754b52-9d7a-4a77-a279-1a7ab207054f)
 
 
 <br/>
