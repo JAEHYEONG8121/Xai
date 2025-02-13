@@ -144,16 +144,16 @@ If SHAP values are highly asymmetrical, the model may be overly dependent on a f
 <br/>
 
 ## 6. Next Steps 🚀
-✅ Compare SHAP with LIME to analyze performance differences.
-✅ Apply SHAP to image/text datasets and evaluate its interpretability.
-✅ Optimize SHAP computation by reducing the number of perturbations while maintaining accuracy.
+✅ Compare SHAP with LIME to analyze performance differences.<br/>
+✅ Apply SHAP to image/text datasets and evaluate its interpretability.<br/>
+✅ Optimize SHAP computation by reducing the number of perturbations while maintaining accuracy.<br/>
 ✅ Explore other explainability methods (LRP, Integrated Gradients) for comparison.
 
 <br/>
 
 ## 7. References 📚
-📄 **Paper:** "A Unified Approach to Interpreting Model Predictions" – Lundberg & Lee (2017)
-🔗 **Official SHAP Library:** slundberg/shap
-📑 **Shapley Value Theory:** Lloyd S. Shapley (1953) – Contributions to the Theory of Games
+📄 **Paper:** "A Unified Approach to Interpreting Model Predictions" – Lundberg & Lee (2017)<br/>
+🔗 **Official SHAP Library:** slundberg/shap<br/>
+📑 **Shapley Value Theory:** Lloyd S. Shapley (1953) – Contributions to the Theory of Games<br/>
 
 💡 Feedback and contributions to this project are always welcome! 🚀
