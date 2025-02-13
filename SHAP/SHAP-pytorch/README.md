@@ -112,3 +112,43 @@ This formula can be mapped to the corresponding **PyTorch implementation** as fo
 | $f(S)$ (Model prediction for subset $S$) | `f_S = self.model(perturbations).detach()` |
 | $f(S \cup \{i\})$ (Model prediction including feature $i$) | `f_S_i = self.model(perturbed_with_i).detach()` |
 | Shapley Weight | `compute_weights()` function |
+
+## 5. Results & Analysis
+### 🔹 Experiment Results
+- Positive (+) SHAP Values:
+  - These features increase the model’s prediction when present.
+For example, Feature Index 10, 16, 18 play a significant role in boosting the prediction value.
+
+Negative (-) SHAP Values:
+
+These features lower the model’s prediction when present.
+Particularly, Feature Index 4, 6, 9, 13 strongly contribute to decreasing the predicted outcome.
+This means that when these features are present, the model is more likely to predict a lower probability for a specific class.
+Distribution of Feature Contributions:
+
+Larger SHAP values suggest that the model is highly sensitive to those features.
+Features 10, 16, and 18 positively impact the prediction, while 4, 6, and 9 negatively impact it.
+On the other hand, Feature Index 7, 14, and 19 seem to have minimal influence.
+Possible Model Bias or Overfitting:
+
+Some features (Index 6, 9, 13, etc.) exhibit extreme SHAP values, which might indicate overfitting or bias toward certain features.
+If SHAP values are highly asymmetrical, the model may be overly dependent on a few features, which can be problematic.
+
+### 🔹 Feature Importance Graph Example
+
+
+
+<br/>
+
+## 6. Next Steps
+
+✅ **Compare LIME with SHAP** to analyze performance differences.<br/>
+✅ **Apply LIME to image/text data** and evaluate its effectiveness.
+
+<br/>
+## 7. References $ Papers
+
+📄 **Paper**: "Why Should I Trust You?" Explaining the Predictions of Any Classifier<br/>
+🔗 **Official LIME Library**: marcotcr/lime
+
+💡 **Feedback on this project is always welcome!** 🚀
