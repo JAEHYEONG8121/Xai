@@ -114,6 +114,7 @@ This formula can be mapped to the corresponding **PyTorch implementation** as fo
 | Shapley Weight | `compute_weights()` function |
 
 <br/>
+
 ## 5. Results & Analysis
 ### 🔹 Experiment Results
 - **Positive (+) SHAP Values:**
@@ -141,6 +142,7 @@ If SHAP values are highly asymmetrical, the model may be overly dependent on a f
 ![image](https://github.com/user-attachments/assets/d5754b52-9d7a-4a77-a279-1a7ab207054f)
 
 <br/>
+
 ## 6. Next Steps 🚀
 ✅ Compare SHAP with LIME to analyze performance differences.
 ✅ Apply SHAP to image/text datasets and evaluate its interpretability.
@@ -148,6 +150,7 @@ If SHAP values are highly asymmetrical, the model may be overly dependent on a f
 ✅ Explore other explainability methods (LRP, Integrated Gradients) for comparison.
 
 <br/>
+
 ## 7. References 📚
 📄 **Paper:** "A Unified Approach to Interpreting Model Predictions" – Lundberg & Lee (2017)
 🔗 **Official SHAP Library:** slundberg/shap
