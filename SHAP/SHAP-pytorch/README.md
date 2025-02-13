@@ -107,8 +107,8 @@ This formula can be mapped to the corresponding **PyTorch implementation** as fo
 
 | **SHAP Formula** | **Code Implementation** |
 |-----------------|----------------------|
-| $ \phi_i $ (SHAP value) | `shap_values[i]` |
-| $ S \subseteq F \setminus \{i\} $ (Subset excluding $ i $) | `perturbations` (randomly masked features) |
-| $ f(S) $ (Model prediction for subset $ S $) | `f_S = self.model(perturbations).detach()` |
-| $ f(S \cup \{i\}) $ (Model prediction including feature $ i $) | `f_S_i = self.model(perturbed_with_i).detach()` |
+| $\phi_i$ (SHAP value) | `shap_values[i]` |
+| $S \subseteq F \setminus \{i\}$ (Subset excluding $i$) | `perturbations` (randomly masked features) |
+| $f(S)$ (Model prediction for subset $S$) | `f_S = self.model(perturbations).detach()` |
+| $f(S \cup \{i\})$ (Model prediction including feature $i$) | `f_S_i = self.model(perturbed_with_i).detach()` |
 | Shapley Weight | `compute_weights()` function |
