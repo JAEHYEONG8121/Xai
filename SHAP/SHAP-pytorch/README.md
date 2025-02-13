@@ -94,3 +94,21 @@ It averages this difference over all possible feature subsets **$S$**, weighted 
   - Compute the perturbed predictions.
   - Calculate the difference between the perturbed and baseline predictions.
   - Weight these differences to obtain SHAP values.
+
+### 🌟 Mapping Equations to code
+
+SHAP (SHapley Additive exPlanations) values are computed using the Shapley value formula:
+
+$$
+\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|! (|F| - |S| - 1)!}{|F|!} \left( f(S \cup \{i\}) - f(S) \right)
+$$
+
+This formula can be mapped to the corresponding **PyTorch implementation** as follows:
+
+| **SHAP Formula** | **Code Implementation** |
+|-----------------|----------------------|
+| $ \phi_i $ (SHAP value) | `shap_values[i]` |
+| $ S \subseteq F \setminus \{i\} $ (Subset excluding $ i $) | `perturbations` (randomly masked features) |
+| $ f(S) $ (Model prediction for subset $ S $) | `f_S = self.model(perturbations).detach()` |
+| $ f(S \cup \{i\}) $ (Model prediction including feature $ i $) | `f_S_i = self.model(perturbed_with_i).detach()` |
+| Shapley Weight | `compute_weights()` function |
