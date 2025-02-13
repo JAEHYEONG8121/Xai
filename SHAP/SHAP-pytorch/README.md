@@ -113,6 +113,7 @@ This formula can be mapped to the corresponding **PyTorch implementation** as fo
 | $f(S \cup \{i\})$ (Model prediction including feature $i$) | `f_S_i = self.model(perturbed_with_i).detach()` |
 | Shapley Weight | `compute_weights()` function |
 
+<br/>
 ## 5. Results & Analysis
 ### 🔹 Experiment Results
 - **Positive (+) SHAP Values:**
@@ -139,18 +140,17 @@ If SHAP values are highly asymmetrical, the model may be overly dependent on a f
 
 ![image](https://github.com/user-attachments/assets/d5754b52-9d7a-4a77-a279-1a7ab207054f)
 
+<br/>
+## 6. Next Steps 🚀
+✅ Compare SHAP with LIME to analyze performance differences.
+✅ Apply SHAP to image/text datasets and evaluate its interpretability.
+✅ Optimize SHAP computation by reducing the number of perturbations while maintaining accuracy.
+✅ Explore other explainability methods (LRP, Integrated Gradients) for comparison.
 
 <br/>
+## 7. References 📚
+📄 **Paper:** "A Unified Approach to Interpreting Model Predictions" – Lundberg & Lee (2017)
+🔗 **Official SHAP Library:** slundberg/shap
+📑 **Shapley Value Theory:** Lloyd S. Shapley (1953) – Contributions to the Theory of Games
 
-## 6. Next Steps
-
-✅ **Compare LIME with SHAP** to analyze performance differences.<br/>
-✅ **Apply LIME to image/text data** and evaluate its effectiveness.
-
-<br/>
-## 7. References $ Papers
-
-📄 **Paper**: "Why Should I Trust You?" Explaining the Predictions of Any Classifier<br/>
-🔗 **Official LIME Library**: marcotcr/lime
-
-💡 **Feedback on this project is always welcome!** 🚀
+💡 Feedback and contributions to this project are always welcome! 🚀
