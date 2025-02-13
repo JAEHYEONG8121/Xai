@@ -69,8 +69,8 @@ $\[
 - **$S$** : A subset of features excluding $i$  
 - **$f(S)$** : The model's prediction when only the features in $S$ are present  
 - **$f(S \cup \{i\})$** : The model's prediction when feature $i$ is added to $S$  
-  
 
+  
 ### 🔍 Key Concept
 
 The SHAP value measures the contribution of feature **$i$** by evaluating the difference in model predictions when **$i$** is present vs. absent.  
