@@ -1,4 +1,3 @@
-# main.py
 import torch
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
@@ -18,8 +17,7 @@ y_train, y_test = torch.tensor(y_train, dtype=torch.float32), torch.tensor(y_tes
 
 model = train_model(X_train, y_train, input_dim=20)
 
-dataset_mean = X_train.mean(dim=0)
+explainer = SHAPExplainer(model)
 
-explainer = SHAPExplainer(model, dataset_mean=dataset_mean)
 sample_instance = X_test[0]
 explain_instance(model, sample_instance)
